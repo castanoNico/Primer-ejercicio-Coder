@@ -7,12 +7,13 @@ let precioMenores = 400;
 let stockEntradasMenores = 25;
 
 alert("Bienvenido a la preventa de entradas para el Show del codigo")
-//alert("Nuestros decuentos\n Compra de $1200 o más: 10% de descuento \n Compra de $2500 o más 20% de descuento");
 alert("Descuentos\nCon tu compra de $1200 o más, obtenes un 10% de descuento.\n Con tu compra de $2500 o más, obtenes un 20% de descuento");
 
 
 
-
+function precioFinal (cantidad, precio) {  
+    precioTotal += cantidad * precio
+}
 
 function stockCompra (stock, cantidad, precio){
     precioFinal(cantidad, precio);
@@ -32,9 +33,7 @@ let compraEntrada = prompt("Eliga el tipo de entrada que quiere comprar:\n -Entr
 let precioTotal = 0;
 let ambas = 2;
 
-function precioFinal (cantidad, precio) {  
-    precioTotal += cantidad * precio
-}
+
 
 
 if (compraEntrada == "Entrada para mayores" || compraEntrada == "entrada para mayores" ) {
