@@ -6,8 +6,8 @@ function Entrada (nombre, precio, stock){
 
 
 
-const entradaShowMayores = new Entrada("-Entrada de mayores", 800, 25)
-const entradaShowMenores = new Entrada("-Entrada de menores", 400, 25)
+const entradaShowMayores = new Entrada("-Entrada para mayores", 800, 25)
+const entradaShowMenores = new Entrada("-Entrada para menores", 400, 25)
 
 
 const tickets = [entradaShowMayores , entradaShowMenores]
