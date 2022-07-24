@@ -25,6 +25,7 @@ function mostrarOpciones() {
 
 
 // OTRA MANERA DE DECLARAR LA function
+
 // const mostrarOpciones = function() {
 //     for(const entrada of tickets){
 //         nombreTicket.push(entrada.nombre)
