@@ -1,3 +1,7 @@
+// Constuctor de Objetos
+
+// Los objetos tienen propiedades(ej: nombre) y valores(ej: god of war)
+
 function Juego (nombre, precio, stock){
         this.nombre = nombre
         this.precio = precio
@@ -12,10 +16,8 @@ const juego5 = new Juego ("Final Fantasy", 450, 30)
 const juego6 = new Juego ("Deep Rock Galactic", 1250, 30)
 
 const juegosFisicos = [juego1, juego2, juego3, juego4, juego5, juego6]
-
+//porque me aparece el cuadrado rojo de la muerte?????????
 const nombreJuegos = []
-
-
 function agregarJuego() {
     for(const juego of juegosFisicos){
         nombreJuegos.push(juego.nombre)        
@@ -23,8 +25,6 @@ function agregarJuego() {
 }
 
 agregarJuego()
-
-nombreJuegos.sort()
 
 console.log(nombreJuegos)
 
@@ -41,11 +41,13 @@ function stockCompra(cantidad, juego) {
      precioFinal (cantidad, juego.precio);
    if (juego.stock >= cantidad){
     alert(`Compraste ${cantidad} ${juego.nombre}`)
+    //alert("Monto a pagar: " + cantidad * juego.precio)
    } 
    else { 
      alert("No tenemos esa cantidad")
    }
 }
+
 
 alert("Bienvenido a Ragnarok: Tu tienda de Juegos")
 
@@ -58,26 +60,32 @@ for (let i = 0; i < cantidadDeCompras; i++){
     comprarJuego = prompt("indique el juego que quiere comprar:\n " + nombreJuegos.join("\n ")).toLowerCase()
     
 if (comprarJuego == "god of war"){
-   stockCompra(cantidadJuego, juego1)
+   // let cantidadJuego = prompt("Indique la cantidad que quiere comprar de este juego ");
+    stockCompra(cantidadJuego, juego1)
 }
 
 else if (comprarJuego == "cuphead"){
+   // let cantidadJuego = prompt("Indique la cantidad que quiere comprar de este juego ");
     stockCompra(cantidadJuego, juego2)
 }
 
 else if (comprarJuego == "hollow knight"){
+   // let cantidadJuego = prompt("Indique la cantidad que quiere comprar de este juego ");
     stockCompra(cantidadJuego, juego3)
 }
 
 else if (comprarJuego == "gta v"){
+   // let cantidadJuego = prompt("Indique la cantidad que quiere comprar de este juego ");
     stockCompra(cantidadJuego, juego4)
 }
 
 else if (comprarJuego == "final fantasy"){
+   //let cantidadJuego = prompt("Indique la cantidad que quiere comprar de este juego ");
     stockCompra(cantidadJuego, juego5)
 }
 
 else if (comprarJuego == "deep rock galactic"){
+   // let cantidadJuego = prompt("Indique la cantidad que quiere comprar de este juego ");
     stockCompra(cantidadJuego, juego6)
 }
 
@@ -85,6 +93,7 @@ else {
     alert("Seleccione una opcion correcta")
 }
 }
+
 
 switch(true){
     case precioTotal >= 2000 && precioTotal < 2500: 
@@ -96,10 +105,12 @@ switch(true){
         precioTotal = precioTotal * 0.80
         alert("recibiste un 20% de descuento por tu compra")
         alert(`El precio final es de ${precioTotal} pesos`)
-        break;
-    default:
+        default:
             alert("el precio final es de " + precioTotal + " pesos")
-            break;
 }
 
-//agregar lo visto en la clase Funciones de orden superior ------SORT
+// if (precioTotal >= 1900 && precioTotal < 2500){
+//     alert("El total a pagar es de: " + precioTotal)
+// }
+
+//agregar lo visto en la clase Funciones de orden superior -----SORT

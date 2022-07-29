@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid black;
-}
+} */
 
 html {
     height: 100%;
@@ -101,12 +101,12 @@ input {
 }
 
 .precio {
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
 } 
 
 h5 {
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
    text-align: center;
 }
@@ -127,3 +127,10 @@ h5 {
     justify-content: center;
     flex-direction: column;
 }
+
+button {
+    padding: 7px 22px 7px 22px ;
+    /* background-color: #05a;
+    color: #fff; */
+}
+
