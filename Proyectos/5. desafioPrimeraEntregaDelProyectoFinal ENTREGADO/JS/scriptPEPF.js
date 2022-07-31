@@ -24,6 +24,7 @@ function agregarJuego() {
 
 agregarJuego()
 
+//nombreJuegos.sort()
 nombreJuegos.sort((a, b) => {
     if (a > b) {
       return 1;
@@ -110,4 +111,3 @@ switch(true){
             break;
 }
 
-//agregar lo visto en la clase Funciones de orden superior ------SORT
