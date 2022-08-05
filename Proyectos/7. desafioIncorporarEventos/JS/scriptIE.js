@@ -291,21 +291,30 @@ input.addEventListener ("change", inputHandler)
 //cantidadDeCompras = prompt("Indica la cantidad de Juegos que compraras")
 
 
-  let comprarJuego
-  let listaDesplegable = document.getElementById("listaDesplegable")
-  listaDesplegable.addEventListener("change", respuestaClick)
-  function respuestaClick(e){  comprarJuego = e.target.value 
-    console.log(comprarJuego)
-  }  
+  // let comprarJuego
+  // let listaDesplegable = document.getElementById("listaDesplegable")
+  // listaDesplegable.addEventListener("change", respuestaClick)
+  // function respuestaClick(e){  comprarJuego = e.target.value 
+  //   console.log(comprarJuego)
+    
+  // }  
+
 function compra(){
   for (let i = 0; i < cantidadDeCompras; i++){
 
+    let comprarJuego
+    let listaDesplegable = document.getElementById("listaDesplegable")
+    listaDesplegable.addEventListener("change", respuestaClick)
+    function respuestaClick(e){  comprarJuego = e.target.value 
+      console.log(comprarJuego)
       
+     
       // comprarJuego = prompt("indique el juego que quiere comprar:\n " + nombreJuegos.join("\n ")).toLowerCase()
       // let comprarJuego
       // let listaDesplegable = document.getElementById("listaDesplegable")
       // listaDesplegable.addEventListener("change", respuestaClick)
       // function respuestaClick(){  comprarJuego = e.target.value }
+      
       if (comprarJuego == "god of war"){
       stockCompra(cantidadJuego, juego1)
       }
@@ -333,8 +342,8 @@ function compra(){
         alert("Seleccione una opcion correcta")
         }
     
-  }
-
+  
+  
 
 
 switch(true){
@@ -351,5 +360,9 @@ case precioTotal >= 2500:
 default:
         alert("el precio final es de " + precioTotal + " pesos")
         break;
+   }
   }
+ }
 }
+
+//VOLVER A ESTE CODIGO
