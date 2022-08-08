@@ -183,22 +183,3 @@ cantidadDeJuegos = e.target.value
 
 
 }
-
-
-
-
-let botonCompra = document.getElementById("botonCompra")
-botonCompra.addEventListener("click", facturaFinal)
-console.log(botonCompra)
-let factura = document.getElementById("facturaDeCompra")
-
-
-function facturaFinal(juego) {
-  
-  factura.innerHTML = " "
-  let divFactura = document.createElement("div")
-  divFactura.innerHTML = `<h4> Compraste ${juego.nombre}</h4>
-                          <h4>El precio final es de ${precioTotal}</h4>`
-                        factura.append(divFactura)
-
-}
