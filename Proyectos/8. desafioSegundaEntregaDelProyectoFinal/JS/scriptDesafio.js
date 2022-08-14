@@ -1,3 +1,5 @@
+document.addEventListener(`DOMContentLoaded`, () =>{
+
 function Juego (nombre, precio, stock, id){
   this.nombre = nombre
   this.precio = precio
@@ -237,9 +239,54 @@ cantidadDeJuegos = e.target.value
 
 
 
-let botonGuarda = document.getElementsByClassName("botonGuardar")
+// let botonGuarda = document.getElementsByClassName("botonGuardar")
 
-console.log(botonGuarda)
+// console.log(botonGuarda)
+// botonGuarda[0].addEventListener("click", guardarJuego)
+// botonGuarda[1].addEventListener("click", guardarJuego)
+// botonGuarda[2].addEventListener("click", guardarJuego)
+// botonGuarda[3].addEventListener("click", guardarJuego)
+// botonGuarda[4].addEventListener("click", guardarJuego)
+// botonGuarda[5].addEventListener("click", guardarJuego)
+
+// let juegoGuardado
+
+// function guardarJuego(e){  juegoGuardado = e.target.value
+
+//      let  listaJuegos = [];
+
+//      if (juegoGuardado == "god of war"){
+//         listaJuegos.append(juego1)
+//       }
+  
+//       else if (juegoGuardado == "cuphead"){
+//         listaJuegos.append(juego2)
+//       }
+  
+//       else if (juegoGuardado == "hollow knight"){
+//         listaJuegos.append(juego3)
+//       }
+  
+//       else if (juegoGuardado == "gta v"){
+//         listaJuegos.append(juego4)
+//       }
+  
+//       else if (juegoGuardado == "final fantasy"){
+//         listaJuegos.append(juego5)
+//       }
+  
+//       else if (juegoGuardado == "deep rock galactic"){
+//         listaJuegos.append(juego6)
+//       }
+
+// console.log(listaJuegos)
+// localStorage.setItem("juegosGuardados", JSON.stringify(listaJuegos))
+
+// }
+
+const guardarLocal = (clave, valor) => ( sessionStorage.setItem(clave, valor)) ;
+
+let botonGuarda = document.getElementsByClassName("botonGuardar")
 botonGuarda[0].addEventListener("click", guardarJuego)
 botonGuarda[1].addEventListener("click", guardarJuego)
 botonGuarda[2].addEventListener("click", guardarJuego)
@@ -247,40 +294,43 @@ botonGuarda[3].addEventListener("click", guardarJuego)
 botonGuarda[4].addEventListener("click", guardarJuego)
 botonGuarda[5].addEventListener("click", guardarJuego)
 
-let juegoGuardado
-
-function guardarJuego(e){  juegoGuardado = e.target.value
-
-     let  listaJuegos = [];
-
-     if (juegoGuardado == "god of war"){
-        listaJuegos.append(juego1)
-      }
+function guardarJuego(e){
+  juegoElegido = e.target.value
+  if (juegoElegido == "god of war"){
   
-      else if (juegoGuardado == "cuphead"){
-        listaJuegos.append(juego2)
-      }
+    guardarLocal(juegoElegido, JSON.stringify(juego1))
   
-      else if (juegoGuardado == "hollow knight"){
-        listaJuegos.append(juego3)
-      }
-  
-      else if (juegoGuardado == "gta v"){
-        listaJuegos.append(juego4)
-      }
-  
-      else if (juegoGuardado == "final fantasy"){
-        listaJuegos.append(juego5)
-      }
-  
-      else if (juegoGuardado == "deep rock galactic"){
-        listaJuegos.append(juego6)
-      }
+}
 
+ else if (juegoElegido == "cuphead"){
 
+  guardarLocal(juegoElegido, JSON.stringify(juego2))
+}
 
-console.log(listaJuegos)
-localStorage.setItem("juegosGuardados", JSON.stringify(listaJuegos))
+else if (juegoElegido == "hollow knight"){
+
+  guardarLocal(juegoElegido, JSON.stringify(juego3))
+
+}  
+
+else if (juegoElegido == "gta v"){
+
+  guardarLocal(juegoElegido, JSON.stringify(juego4))
 
 }
 
+
+else if (juegoElegido == "final fantasy"){
+
+  guardarLocal(juegoElegido, JSON.stringify(juego5))
+
+}
+
+else if (juegoElegido == "god of war"){
+
+  guardarLocal(juegoElegido, JSON.stringify(juego6))
+
+}
+}
+
+})
