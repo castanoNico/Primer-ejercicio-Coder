@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS/cssfinal.css" />
+    <title>Document</title>
+  </head>
+
+    <div class="div-icon"></div>
+
+    <header>
+        
+        <ul>
+            <li>Inicio</li>
+            <li>Informacion</li>
+        </ul>
+
+        <input type="search" placeholder="Buscar">
+
+    </header> 
+
+
+    <div class="grid-container">
+
+        <div id="main-grid" class="div-main">
+        </div>
+
+        <div class="div-aside">
+          <span>Indique cuantos juego:</span>
+          <input type="number" name="" id="cantidadeDeJuegos" placeholder="Cantidad">
+          <br><br>
+          <span>Indique el juego que quiere comprar:</span>
+          <select name="juegos" id="listaDesplegable">
+              <option value= ></option>
+              <option value="cuphead" id="cup" class="jogo">CupHead</option>
+              <option value="deep rock galactic" id="deep">Deep rock Galactic</option>
+              <option value="final fantasy" id="final" class="jogo">Final Fantasy</option>
+              <option value="gta v" id="gta" class="jogo">GTA V</option>
+              <option value="god of war" id="god" class="jogo">god of war</option>
+              <option value="hollow knight" id="hollow" class="jogo">Hollow Knight</option>
+          </select>
+          <br><br>
+
+            <!-- <span>Indique la cantidad de compras:</span>
+            <input type="number" name="" id="cantidadDeCompras" class="Inputdecompra " placeholder="Cantidad">
+            <br><br> -->
+          <button id="botonCompra">Comprar</button>
+          <br><br>
+          <div id="facturaDeCompra" class="facturaDeCompras">
+          </div>
+          <br><br>
+          <button id="botonCarrito">Ver carrito</button><br><br>
+          <div id="divCarrito"></div>
+
+          <div id="divCar">
+             <table id="listaCarrito">
+              <tr>
+                <td><strong>Juego</strong></td>
+                <td><strong>Precio</strong></td>
+                <td><strong>Cantidad</strong></td>
+                <td><strong>Subtotal</strong></td>
+              </tr>
+            </table>
+            <h4 id="precioTotal">Total: </h4>
+          </div>
+        </div>
+
+    </div>
+    <script src="JS/scriptCorregido.js"></script>
+  </body>
+</html>
