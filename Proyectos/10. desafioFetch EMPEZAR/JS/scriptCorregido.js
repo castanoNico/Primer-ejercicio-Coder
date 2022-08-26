@@ -225,3 +225,6 @@ document.addEventListener(`DOMContentLoaded`, () =>{
 
   })
 
+  // mirar la clase para la asincronia de las alert y agregar algo de ahí
+  // Crear el json  y usar el fetch
+
