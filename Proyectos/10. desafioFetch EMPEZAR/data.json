@@ -1,0 +1,42 @@
+[{
+    "id":1,
+    "nombre":"God of War",
+    "precio":3500,
+    "stock":10,
+    "src":"./IMG/godd.jpg"
+},
+{
+    "id":2,
+    "nombre":"Cuphead",
+    "precio":750,
+    "stock":10,
+    "src":"./IMG/Cuphead.png"
+},
+{
+    "id":3,
+    "nombre":"Hollow Knight",
+    "precio":1200,
+    "stock":102,
+    "src":"./IMG/hollow.jpg"
+},
+{
+    "id":4,
+    "nombre":"GTA V",
+    "precio":2000,
+    "stock":1,
+    "src":"./IMG/gta700.jpg"
+},
+{
+    "id":5,
+    "nombre":"Final Fantasy",
+    "precio":80,
+    "stock":12,
+    "src":"../IMG/ffc.jpg"
+},
+{
+    "id":6,
+    "nombre":"deep rock galactic",
+    "precio":1250,
+    "stock":5,
+    "src":"./IMG/deep500.jpg"
+}]

@@ -117,6 +117,18 @@ document.addEventListener(`DOMContentLoaded`, () =>{
     //   </div>
     // </div>
 
+    function agregarJuego(itemCarrito){
+      Swal.fire({
+        icon:"warning",
+        text: `queres agregar este juego al carito?`,
+        confirmButtonText: `Agregar`,
+        denyButtonText: `No Agregar`,
+      }).then((result) => {
+        if (result.isConfirmed){
+          facturaFinal(itemCarrito)
+        }
+      })
+      }
 
 
 
@@ -139,7 +151,7 @@ document.addEventListener(`DOMContentLoaded`, () =>{
     })
   }
   
-  loadGameCard()
+   loadGameCard()
   let total = 0;
   let arrayCarrito = [];
   // loadGameCards();
@@ -207,7 +219,7 @@ document.addEventListener(`DOMContentLoaded`, () =>{
       arrayCarrito.push(itemCarrito);
       sessionStorage.setItem("carrito", JSON.stringify(arrayCarrito));
       total += juegosFisico[juegoId - 1].precio * cantidad
-      facturaFinal(itemCarrito)
+      agregarJuego(itemCarrito)
     }
 
    
@@ -220,14 +232,24 @@ document.addEventListener(`DOMContentLoaded`, () =>{
     button.onclick = addToCart;
   }); 
 
- 
+  const juegosJson = []
 
+  fetch("../data.json")
+  .then((response) => response.json())
+  .then((data) => console.log(data))
 
   })
 
-  // mirar la clase para la asincronia de las alert y agregar algo de ahí
+
+
+  
   // Crear el json  y usar el fetch
-  //Reacer
+
+
+
+
+
+
 
 
 
