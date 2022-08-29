@@ -31,7 +31,7 @@
     "nombre":"Final Fantasy",
     "precio":80,
     "stock":12,
-    "src":"../IMG/ffc.jpg"
+    "src":"./IMG/ffc.jpg"
 },
 {
     "id":6,
